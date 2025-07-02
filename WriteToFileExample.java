@@ -1,5 +1,5 @@
-import java.io.FileWriter;
 import java.io.BufferedWriter;
+import java.io.FileWriter;
 import java.io.IOException;
 
 public class WriteToFileExample {
@@ -10,6 +10,7 @@ public class WriteToFileExample {
 
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(fileName))) {
             writer.write(contentToWrite);
+            writer.write("\nI am from Ashrai Engineering College\n");
             System.out.println("Successfully wrote to the file: " + fileName);
         } catch (IOException e) {
             System.err.println("An error occurred while writing to the file: " + e.getMessage());
