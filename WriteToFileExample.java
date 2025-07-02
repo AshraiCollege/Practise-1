@@ -11,6 +11,7 @@ public class WriteToFileExample {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(fileName))) {
             writer.write(contentToWrite);
             writer.write("\nI am from Ashrai Engineering College\n");
+              writer.write("\nHi, I am from Ashrai Engineering College\n");
             System.out.println("Successfully wrote to the file: " + fileName);
         } catch (IOException e) {
             System.err.println("An error occurred while writing to the file: " + e.getMessage());
